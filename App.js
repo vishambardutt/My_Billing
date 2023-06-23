@@ -17,24 +17,8 @@ const App = () => {
         <Stack.Screen name="MyBill" component={MyBill} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
-   
   
     );
 };
 
 export default App;
-
-
-// import React from 'react'
-// import {View,Text} from 'react-native';
-// import MyBill from './src/screens/MyBill';
-
-// const App = () => {
-//   return (
-//     <View>
-//       <MyBill/>
-//     </View>
-//   )
-// }
-
-// export default App

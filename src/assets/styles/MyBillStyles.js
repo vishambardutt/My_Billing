@@ -8,7 +8,7 @@ export default styles = StyleSheet.create({
             height: 40,
             width: '100%',
             elevation: 4,
-            backgroundColor: '#2CD3E1',
+            backgroundColor: '#FFD3A3',
             justifyContent: 'space-between',
             alignItems: 'center',
             flexDirection: 'row',
@@ -26,7 +26,7 @@ export default styles = StyleSheet.create({
             bottom: 1,
             height: 100,
             width: '100%',
-            backgroundColor: '#6C9BCF',
+            backgroundColor: '#FFD0D0',
             elevation: 5,
             flexDirection: 'row',
             alignItems: 'center',
@@ -34,26 +34,26 @@ export default styles = StyleSheet.create({
             borderTopLeftRadius: 15,
             borderTopRightRadius: 15,
       },
-      btn: {
-            width: '50%',
-            height: 60,
+      submit_btn: {
+            width: '30%',
+            height: 40,
             borderRadius: 10,
-            backgroundColor: 'THEME_COLOR',
+            backgroundColor:'#D7C0AE',
             justifyContent: 'center',
             alignItems: 'center',
 
       },
       txt: {
-            color: '#ffffff',
+            color: '#27374D',
             fontSize: 15,
             fontWeight: 500,
-            backgroundColor: '#394867',
+            // backgroundColor: '#394867',
             borderRadius: 20,
             padding: 10,
 
       },
       total: {
-            color: '#ffffff',
+            color: '#27374D',
             fontSize: 20,
             fontWeight: 500,
 
@@ -91,12 +91,12 @@ export default styles = StyleSheet.create({
             padding: 10,
             
           },
-          nodatatext:{
+      nodatatext:{
             fontSize:15,
             textAlign:'center',
 
           },
-          productImage:{
+      productImage:{
             padding:5,
             width:70,
             height:70,
@@ -152,7 +152,69 @@ export default styles = StyleSheet.create({
             fontSize:15,
             fontWeight:600,
             color:'#213555',
-
+       },
+      nmodalv:{
+            width:Dimensions.get("window").width,
+            height:Dimensions.get("window").height,
+            backgroundColor:'(rgb)0,0,0,0.5',
+            justifyContent:'center',
+            alignItems:'center',
+       },
+      nameview:{
+            backgroundColor:'#fff',
+            width:'90%',
+            height:150,
+            borderRadius:15,
+      } ,
+      inputb:{
+            width:'90%',
+            height:50,
+            borderWidth:1,
+            borderRadius:10,
+            marginTop:20,
+            marginLeft:10,
+      },
+      btnv:{
+            width:'100%',
+            justifyContent:'space-evenly',
+            alignItems:'center',
+            flexDirection:'row',
+            marginTop:20,
+            marginBottom:10,
 
       },
+      cencel_btn:{
+            width:'30%',
+            height:30,
+            justifyContent:'space-evenly',
+            alignItems:'center',
+            borderRadius:10,
+            backgroundColor:'#ffccff',
+      },
+      cencel_btn_text:{
+            fontSize:15,
+            fontWeight:600,
+
+      },
+
+      confirm_btn:{
+            width:'30%',
+            height:30,
+            justifyContent:'space-evenly',
+            alignItems:'center',
+            borderRadius:10,
+            backgroundColor:'#F6BA6F',
+       },
+      confirm_btn_text:{
+            fontSize:15,
+            fontWeight:600,
+
+      },
+      errortext:{
+            color:'red',
+            fontSize:12,
+            paddingLeft:20,
+            marginLeft:20,
+      },
+
 })
