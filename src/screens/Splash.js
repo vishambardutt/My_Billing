@@ -17,6 +17,7 @@ const Splash = ({ navigation }) => {
 };
 
 export default Splash;
+
 const styles = StyleSheet.create({
       container: {
             flex: 1,

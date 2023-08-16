@@ -6,6 +6,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import RNHTMLtoPDF from 'react-native-html-to-pdf';
 
 const Home = ({ navigation }) => {
+  const [sortOption, setSortOption] = useState('date');
+
   const [bills, setBills] = useState([]);
   const isFocused = useIsFocused();
 
@@ -16,6 +18,7 @@ const Home = ({ navigation }) => {
   const getBills = async () => {
     let data = await AsyncStorage.getItem('bills');
     let json = JSON.parse(data);
+    
     setBills(json);
   };
 
@@ -50,15 +53,6 @@ const Home = ({ navigation }) => {
       return null;
     }
   };
-
-  // const shareBill = (item) => {
-  //   generatePDF(item).then((pdfPath) => {
-  //     if (pdfPath) {
-  //       const shareURL = `file://${pdfPath}`;
-  //       Linking.openURL(`whatsapp://send?text=${shareURL}`);
-  //     }
-  //   });
-  // };
 
   const shareBill = async (item) => {
     try {
